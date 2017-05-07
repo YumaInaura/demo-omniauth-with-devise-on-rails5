@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable,
          # :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable,
+         :recoverable, :rememberable, :trackable, :omniauthable,
          :omniauth_providers => [:slack, :twitter]
 
   def self.from_slack_omniauth(auth)
