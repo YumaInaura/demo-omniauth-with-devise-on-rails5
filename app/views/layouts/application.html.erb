@@ -15,7 +15,16 @@
     <%= link_to "Sign in with Slack", user_slack_omniauth_authorize_path %><br />
       
     <% if current_user %>
-      <%= link_to "Sign in with Slack", user_slack_omniauth_authorize_path %><br />
+      <img src="<%= current_user.image %>">
+
+      <ul>
+        <% current_user.attributes.each do |key, value| %>
+          <li>
+            <%= key %>
+            <%= value %>
+          </li>
+        <% end %>
+      </ul>
     <% end %>
       
      <%= yield %>
