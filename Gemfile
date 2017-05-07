@@ -7,6 +7,7 @@ end
 
 gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth-slack'
+gem 'omniauth-twitter'
 gem 'mysql2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -42,6 +43,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+  gem 'pry-rails'
 end
 
 group :development do
