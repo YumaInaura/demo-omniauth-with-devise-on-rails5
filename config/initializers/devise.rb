@@ -252,6 +252,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :slack, ENV['SLACK_KEY'], ENV['SLACK_SECRET'], scope: 'client'
+  config.omniauth :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET'], scope: 'client'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
