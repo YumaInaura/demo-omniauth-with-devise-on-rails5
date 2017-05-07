@@ -7,6 +7,7 @@ end
 
 gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth-slack'
+gem 'omniauth-twitter'
 gem 'mysql2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
